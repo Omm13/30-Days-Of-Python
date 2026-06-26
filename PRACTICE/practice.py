@@ -289,4 +289,60 @@
 #     print("Please enter a natural number (greater than 0).")
 #     n = int(input("Enter a natural number: "))
 # sum_natural = n * (n + 1) // 2
-# print(f"The sum of the first {n} natural numbers is: {sum_natural}\n")
+# print(f"The sum of the first {n} natural numbers is: {sum_natural}\n")    
+
+# # DAY-12 practice-12
+# # 1. Write a Program to Find the Factorial of a Number:
+# n = int(input("Enter a number to find its factorial: "))
+# for i in range(1, n + 1):
+#     factorial = 1
+#     for j in range(1, i + 1):
+#         factorial *= j    
+# print(f"The factorial of {i} is: {factorial}\n")
+
+# # 2. Print Fibonacci Series:
+# n = int(input("Enter the number of terms for Fibonacci series: "))
+# a, b = 0, 1
+# print("Fibonacci series:")
+# for _ in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+# print("\n")
+
+# # 3. Write a Program to Find the GCD or HCF of Two Numbers:
+# n1 = int(input("Enter first number: "))
+# n2 = int(input("Enter second number: "))
+# hcf = 1
+# for i in range(1, min(n1, n2) + 1):
+#     if n1 % i == 0 and n2 % i == 0:
+#         hcf = i
+# print(f"The GCD or HCF of {n1} and {n2} is: {hcf}\n")
+
+# # DAY-13 practice-13
+# # 1. Write a Program to Find the LCM of Two Numbers:
+# def lcm(x, y):
+#     if x > y:
+#         greater = x
+#     else:
+#         greater = y
+
+#     while True:
+#         if greater % x == 0 and greater % y == 0:
+#             lcm_value = greater
+#             break
+#         greater += 1
+
+#     return lcm_value
+# x = int(input("Enter first number: "))
+# y = int(input("Enter second number: "))
+# lcm_value = lcm(x, y)
+# print(f"The LCM of {x} and {y} is: {lcm_value}\n")
+
+# # 2. Program to calculate the power of number:
+# from math import pow
+# a = int(input("Enter the base number: "))
+# b = int(input("Enter the exponent: "))
+# power = pow(a, b)
+# print(f"{a} raised to the power of {b} is: {power}\n")
+
+# 3. Program to Print Integers in Words:
