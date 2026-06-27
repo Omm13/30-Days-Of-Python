@@ -345,4 +345,71 @@
 # power = pow(a, b)
 # print(f"{a} raised to the power of {b} is: {power}\n")
 
-# 3. Program to Print Integers in Words:
+# # 3. Program to Print Integers in Words:
+# int_to_word = {
+#     0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four",
+#     5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"
+# }
+# def number_to_words(n):
+#     if n in int_to_word:
+#         return int_to_word[n]
+#     else:
+#         return "Number out of range (0-10)"
+# n = int(input("Enter an integer between 0 and 10: "))
+# word = number_to_words(n)
+# print(f"The number {n} in words is: {word}\n")
+
+# # DAY-14 practice-14
+# # 1. Print Numbers in Words in Reverse Order Using a Switch Case
+
+# # 2. Write a Program to Display All Factors of a Number:
+# def factors(n):
+#     factor_list = []
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             factor_list.append(i)
+#     return factor_list
+# n = int(input("Enter a number to find its factors: "))
+# factor_list = factors(n)
+# print(f"The factors of {n} are: {factor_list}\n")
+
+# # 3. Amstrong Number or Not:
+# n = int(input("Enter a number to check if it is an Armstrong number: "))
+# num_str = str(n)
+# num_digits = len(num_str)
+# sum_of_powers = sum(int(digit) ** num_digits for digit in num_str)
+
+# if sum_of_powers == n:
+#     print(f"{n} is an Armstrong number.")
+# else:
+#     print(f"{n} is not an Armstrong number.")
+
+# # DAY-15 practice-15
+# # 1. Prime Number or Not:
+# n = int(input("Enter a number to check if it is prime: "))
+# if n > 1:
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             print(f"{n} is not a prime number.\n")
+#             break
+#     else:
+#         print(f"{n} is a prime number.\n")
+
+# # 2. Print Prime Numbers Within a Range
+# n1 = int(input("Enter the starting number of the range: "))
+# n2 = int(input("Enter the ending number of the range: "))
+# print(f"Prime numbers between {n1} and {n2} are:")
+# for num in range(n1, n2 + 1):
+#     if num > 1:
+#         for i in range(2, int(num**0.5) + 1):
+#             if num % i == 0:
+#                 break
+#         else:
+#             print(num, end=" ")
+
+# # 3. Print Factorial Series:
+# n = int(input("\nEnter a number to print its factorial series: "))
+# factorial = 1
+# for i in range(1, n + 1):
+#     factorial *= i
+#     print(f"{i}! is: {factorial}")
