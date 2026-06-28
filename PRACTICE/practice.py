@@ -413,3 +413,42 @@
 # for i in range(1, n + 1):
 #     factorial *= i
 #     print(f"{i}! is: {factorial}")
+
+# DAY-16 practice-16
+# # 1. Write a Program to Check Whether a Number is a Palindrome:
+# n = input("Enter a number / String to check if it is a palindrome: ")
+# original_number = n
+# n = str(n)
+# if n == n[::-1]:
+#     print(f"{original_number} is a palindrome .\n")
+# else:
+#     print(f"{original_number} is not a palindrome .\n")
+
+# # 2. Check if an Integer Can Be Expressed as the Sum of Two Prime Numbers:
+# n = int(input("Enter an integer to check if it can be expressed as the sum of two prime numbers: "))
+# if n < 2:
+#     print(f"{n} cannot be expressed as the sum of two prime numbers.\n")
+# else:
+#     found = False
+#     for i in range(2, n):
+#         if all(i % j != 0 for j in range(2, int(i**0.5) + 1)):
+#             if all((n - i) % j != 0 for j in range(2, int((n - i)**0.5) + 1)):
+#                 print(f"{n} can be expressed as the sum of two prime numbers: {i} + {n - i}\n")
+#                 found = True
+#                 break
+#     if not found:
+#         print(f"{n} cannot be expressed as the sum of two prime numbers.\n")
+
+# # 3. Print All Digits and Alphabets Using a For Loop:
+# from re import ASCII
+# for i in range(0, 10):  # Digits 0-9
+#     print(i, end=" ")
+# print()  # New line after digits
+# for i in range(65, 91):  # Uppercase A-Z
+#     print(chr(i), end=" ")
+# print()  # New line after uppercase letters
+# for i in range(97, 123):  # Lowercase a-z
+#     print(chr(i), end=" ")
+# print()  # New line after lowercase letters
+
+# DAY-17 practice-17
