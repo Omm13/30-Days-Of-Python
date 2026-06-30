@@ -64,17 +64,85 @@
 # else:
 #     print("Invalid input")
 
-# 4. Print Salay based on tax conditions:
-salary = float(input("Enter your salary: "))
-if salary <= 400000:
-    tax = 0
-elif salary in range(400000, 800000):
-    tax = (salary - 400000) * 0.1
-elif salary in range(800000, 1200000):
-    tax = (salary - 800000) * 0.2 + (400000 * 0.1)
-elif salary in range(1200000, 2000000):
-    tax = (salary - 1200000) * 0.3 + (400000 * 0.2) + (400000 * 0.1)
-elif salary > 2000000:
-    tax = (salary - 2000000) * 0.4 + (800000 * 0.3) + (400000 * 0.2) + (400000 * 0.1)
-print(f"Your tax is: {tax}")
-print(f"Your salary after tax is: {salary - tax}")
+# # 4. Print Salay based on tax conditions:
+# salary = float(input("Enter your salary: "))
+# if salary <= 400000:
+#     tax = 0
+# elif salary in range(400000, 800000):
+#     tax = (salary - 400000) * 0.1
+# elif salary in range(800000, 1200000):
+#     tax = (salary - 800000) * 0.2 + (400000 * 0.1)
+# elif salary in range(1200000, 2000000):
+#     tax = (salary - 1200000) * 0.3 + (400000 * 0.2) + (400000 * 0.1)
+# elif salary > 2000000:
+#     tax = (salary - 2000000) * 0.4 + (800000 * 0.3) + (400000 * 0.2) + (400000 * 0.1)
+# print(f"Your tax is: {tax}")
+# print(f"Your salary after tax is: {salary - tax}")
+
+# # 5. Print Discount based on the given conditions:
+# amount = float(input("Enter the amount: "))
+# if amount <= 1000:
+#     discount = 0
+#     print(f"Your Amount is: {amount}")
+# elif amount in range(1001, 1500):
+#     discount = amount * 0.05
+#     amount = amount - discount
+#     print(f"Your Amount is: {amount}")
+# elif amount in range(1501, 2000):
+#     discount = amount * 0.10
+#     amount = amount - discount
+#     print(f"Your Amount is: {amount}")
+# else:
+#     discount = amount * 0.15
+#     amount = amount - discount
+#     print(f"Your Amount is: {amount}")
+
+# # 6(A). Print Day of the week based on the given number: 
+# n = int(input("Enter Choice: "))
+# if n == 1:
+#     print("Monday")
+# elif n == 2:
+#     print("Tuesday")
+# elif n == 3:
+#     print("Wednesday")
+# elif n == 4:
+#     print("Thursday")
+# elif n == 5:
+#     print("Friday")
+# elif n == 6:
+#     print("Saturday")
+# elif n == 7:
+#     print("Sunday")
+# else:
+#     print("Invalid input")
+
+# # 6(B). Print Day of the week based on the given number:
+# arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+# i = int(input("Enter Choice: "))
+# if 0 <= i <= 6:
+#     print(arr[i - 1])   
+# else:
+#     print("Invalid input")
+
+# # 7. Print operation:
+# n1 = int(input("Enter first number: "))
+# n2 = int(input("Enter second number: "))
+# i = input("Enter Choice (+, -, *, /): ")
+# if i == '+':
+#     print(f"Addition of {n1} and {n2} is: {n1 + n2}")
+# elif i == '-':
+#     print(f"Subtraction of {n1} and {n2} is: {n1 - n2}")
+# elif i == '*':
+#     print(f"Multiplication of {n1} and {n2} is: {n1 * n2}")
+# elif i == '/':
+#     if n2 != 0:
+#         print(f"Division of {n1} and {n2} is: {n1 / n2}")
+#     else:
+#         print("Error: Division by zero is not allowed.")
+# elif i == '%':
+#     if n2 != 0:
+#         print(f"Modulus of {n1} and {n2} is: {n1 % n2}")
+#     else:
+#         print("Error: Modulus by zero is not allowed.")
+# else:
+#     print("Invalid operation")
