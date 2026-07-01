@@ -224,3 +224,85 @@
 #         print(f"{i} is odd and its cube is: {i**3}")
 #     else:
 #         print(f"{i} is even and its square is: {i**2}")
+
+# # Patterns 
+# for i in range(1, 6):
+#     for j in range(1, i+1):
+#         print(j, end=" ")
+#     print()
+
+# for i in range(5, 0, -1):
+#     for j in range(1, i+1):
+#         print(j, end=" ")
+#     print()
+
+# for i in range(6):
+#   for j in range(1, i+1):
+#     print(j, end=" ")
+#   print()
+
+# for i in range(5, 0, -1):
+#   for j in range(1, i+1):
+#     print(j, end=" ")
+#   print()
+
+# for i in range(5,0,-1):
+#   for j in range(5, i-1,-1):
+#     print(j, end=" ")
+#   print()
+
+# for i in range(5,0,-1):
+#   for j in range(i, 0, -1):
+#     print(j, end=' ')
+#   print()
+
+# for i in range(0,5):
+#   for j in range(5, i, -1):
+#     print(j, end=' ')
+#   print()
+
+# # Flyod Pattern 
+# n = 1
+# for i in range(1,6):
+#   for j in range(1, i+1):
+#     print(n, end=' ')
+#     n+=1
+#   print()
+
+# n = 15
+# for i in range(5):
+#   for j in range(5, i, -1):
+#     print(n, end=' ')
+#     n-=1
+#   print()
+
+# for i in range(1,6):
+#   for j in range(1, i+1):
+#     print(i, end=' ')
+#   print()
+
+# for i in range(1,6):
+#   for j in range(1, i+1):
+#     print(j%2, end=' ')
+#   print()
+
+# for i in range(1,6):
+#   for j in range(1, i+1):
+#     print(i%2, end=' ')
+#   print()
+
+# for i in range(1,6):
+#   print("* " * i)
+
+# for i in range( 5, 0,-1):
+#   print("* " * i)
+
+# n = 5
+# for i in range(1,6):
+#   print(" " * (n-i) + "* " * i)  
+
+# for i in range(ord("A"), ord("F")):
+#   for j in range(ord("A"), i+1):
+#     print(chr(j), end=' ')
+#   print() 
+
