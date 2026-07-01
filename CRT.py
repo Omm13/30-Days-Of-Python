@@ -146,3 +146,81 @@
 #         print("Error: Modulus by zero is not allowed.")
 # else:
 #     print("Invalid operation")
+
+# # Keywords
+# import keyword
+# print(keyword.kwlist)
+
+# # Match Case
+# n1 = int(input("Enter first number: "))
+# n2 = int(input("Enter second number: "))
+# ch = input("Enter a choice \n 1.+ \n 2.- \n 3.* \n 4./ \n 5. % \n")
+# match(ch):
+#     case '+':
+#         print(f"Addition is: {n1 + n2}")
+#     case '-':
+#         print(f"Subtraction is: {n1 - n2}")
+#     case '*':
+#         print(f"Multiplication is: {n1 * n2}")
+#     case '/':
+#         if n2 != 0:
+#             print(f"Division is: {n1 / n2}")
+#         else:
+#             print("Error: Division by zero is not allowed.")
+#     case '%':
+#         if n2 != 0:
+#             print(f"Modulus is: {n1 % n2}")
+#         else:
+#             print("Error: Modulus by zero is not allowed.")
+#     case _:
+#         print("Invalid operation")
+
+# # Loops
+# # Using Mod op for even numbers
+# n = int(input("Enter a number: "))
+# for i in range(2, n*2+1):
+#     if i % 2 == 0:
+#         print(i, end=' ')
+
+# # using step
+# n = int(input("\nEnter a number: "))
+# for i in range(2, n*2+1, 2):
+#     print(i, end=' ')
+
+# # Using Mod op for odd numbers
+# n = int(input("\nEnter a number: "))
+# for i in range(1, n*2+1):
+#     if i % 2 != 0:
+#         print(i, end=' ')
+
+# n = int(input("\nEnter a number: "))
+# for i in range(1, n*2+1, 2):
+#     print(i, end=' ')
+
+# # Table of a number
+# n = int(input("\nEnter a number: "))
+# for i in range(n, n*11, n):
+#     print(i)
+
+# # Reverse order
+# n = int(input("Enter a number: "))
+# for i in range(n, 0, -2):
+#     print(i, end=' ')
+
+# # Print numbers between two numbers in ascending or descending order
+# n = int(input("Enter a number: "))
+# m = int(input("Enter another number: "))
+# if n > m:
+#     for i in range(n, m-1, -1):
+#         print(i, end=' ')
+# else:
+#     for i in range(n, m+1):
+#         print(i, end=' ')
+
+# # Printing no. as odd and Cube and even and Square
+# n = int(input("Enter a number: "))
+# for i in range(1, n+1):
+#     if i % 2 != 0:
+#         print(f"{i} is odd and its cube is: {i**3}")
+#     else:
+#         print(f"{i} is even and its square is: {i**2}")
